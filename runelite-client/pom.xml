@@ -41,7 +41,7 @@
 		<git.commit.id.abbrev>nogit</git.commit.id.abbrev>
 		<git.dirty>false</git.dirty>
 		<shade.skip>false</shade.skip>
-		<microbot.version>2.0.27</microbot.version>
+		<microbot.version>2.0.28</microbot.version>
 		<microbot.commit.sha>nogit</microbot.commit.sha>
 	</properties>
 
@@ -73,7 +73,7 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.13.5</version>
+			<version>2.15.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.joonasvali.naturalmouse</groupId>
@@ -171,7 +171,7 @@
 		<dependency>
 			<groupId>com.google.protobuf</groupId>
 			<artifactId>protobuf-javalite</artifactId>
-			<version>3.21.12</version>
+			<version>3.25.5</version>
 		</dependency>
 		<dependency>
 			<groupId>net.runelite</groupId>
