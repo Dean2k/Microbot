@@ -157,5 +157,16 @@ public interface MicrobotConfig extends Config
 		return false;
 	}
 
+    @ConfigItem(
+            keyName = "paranoidMode",
+            name = "Hide botting ref in title",
+            description = "Hides microbot title things.",
+            position = 3,
+            section = generalSection
+    )
+    default boolean paranoidMode() {
+        return false;
+    }
+
 
 }
