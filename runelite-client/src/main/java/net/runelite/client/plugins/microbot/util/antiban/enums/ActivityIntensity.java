@@ -84,28 +84,46 @@ public enum ActivityIntensity {
     public static ActivityIntensity fromSkill(Skill skill) {
         switch (skill) {
             case ATTACK:
+                return MODERATE;
             case DEFENCE:
+                return MODERATE;
             case STRENGTH:
+                return MODERATE;
             case RANGED:
+                return MODERATE;
             case PRAYER:
             case MAGIC:
+                return MODERATE;
             case CONSTRUCTION:
                 return HIGH;
             case COOKING:
+                return LOW;
             case WOODCUTTING:
+                return MODERATE;
             case FLETCHING:
+                return MODERATE;
             case FISHING:
+                return LOW;
             case FIREMAKING:
+                return HIGH;
             case CRAFTING:
+                return LOW;
             case SMITHING:
+                return LOW;
             case MINING:
+                return LOW;
             case HERBLORE:
                 return LOW;
             case AGILITY:
+                return HIGH;
             case THIEVING:
+                return LOW;
             case SLAYER:
+                return LOW;
             case RUNECRAFT:
+                return LOW;
             case HUNTER:
+                return LOW;
             case FARMING:
                 return MODERATE;
             default:

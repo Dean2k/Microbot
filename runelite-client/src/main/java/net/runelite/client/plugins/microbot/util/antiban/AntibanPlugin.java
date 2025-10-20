@@ -93,10 +93,10 @@ public class AntibanPlugin extends Plugin {
     private boolean ready;
     private Skill lastSkillChanged;
     private NavigationButton navButton;
-    public static final int MICRO_BREAK_DURATION_LOW_DEFAULT = 3;
-    public static final int MICRO_BREAK_DURATION_HIGH_DEFAULT = 15;
+    public static final int MICRO_BREAK_DURATION_LOW_DEFAULT = 1;
+    public static final int MICRO_BREAK_DURATION_HIGH_DEFAULT = 12;
     private static final int MICRO_BREAK_DURATION_LOW_MIN = 1;
-    private static final int MICRO_BREAK_DURATION_LOW_MAX = 10;
+    private static final int MICRO_BREAK_DURATION_LOW_MAX = 3;
     private static final int MICRO_BREAK_DURATION_HIGH_MIN = 1;
     private static final int MICRO_BREAK_DURATION_HIGH_MAX = 30;
 
@@ -150,7 +150,7 @@ public class AntibanPlugin extends Plugin {
 
     @Override
     protected void startUp() throws AWTException {
-        Rs2Antiban.setActivityIntensity(ActivityIntensity.EXTREME);
+        Rs2Antiban.setActivityIntensity(ActivityIntensity.LOW);
         final MasterPanel panel = injector.getInstance(MasterPanel.class);
         final BufferedImage icon = ImageUtil.loadImageResource(getClass(), "antiban.png");
         navButton = NavigationButton.builder()
